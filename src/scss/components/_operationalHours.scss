@@ -1,0 +1,44 @@
+// File: src/scss/components/_operationalHours.scss
+
+.operational-hours-section {
+    // text-center
+    text-align: center;
+}
+
+.hours-title {
+    // text-4xl md:text-5xl font-bold mb-6
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+
+    @media (min-width: $breakpoint-md) {
+        font-size: 3rem;
+    }
+}
+
+.hours-display {
+    // text-2xl md:text-3xl font-light text-accent tracking-widest
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: $color-accent;
+    letter-spacing: 0.1em;
+
+    // bg-gray-800/70 inline-block px-8 py-4
+    display: inline-block;
+    background-color: rgba($color-gray-dark, 0.7);
+    padding: 1rem 2rem;
+
+    // rounded-lg shadow-lg shadow-black/20
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.2);
+
+    @media (min-width: $breakpoint-md) {
+        font-size: 1.875rem;
+    }
+}
+
+.hours-subtitle {
+    // mt-4 text-gray-400
+    margin-top: 1rem;
+    color: $color-gray-light;
+}

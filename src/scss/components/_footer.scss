@@ -1,0 +1,109 @@
+.app-footer {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: $color-text-light;
+    padding: 3rem 0;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+
+    @media (min-width: $breakpoint-lg) {
+        grid-template-columns: repeat(3, 1fr);
+        text-align: left;
+    }
+}
+
+.footer-about {
+    p {
+        color: $color-gray-light;
+        line-height: 1.6;
+    }
+}
+
+.footer-contact {
+    @media (min-width: $breakpoint-lg) {
+        grid-column: span 2;
+    }
+}
+
+.footer-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: $color-accent;
+    margin-bottom: 1rem;
+}
+
+.contact-details {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    align-items: start;
+
+    @media (min-width: $breakpoint-md) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    p {
+        color: $color-gray-light;
+        margin-bottom: 0.5rem;
+    }
+
+    a {
+        color: $color-text-light;
+        text-decoration: none;
+        transition: color 0.3s ease;
+        
+        &:hover {
+            color: $color-accent;
+        }
+    }
+}
+
+.map-container {
+    width: 100%;
+    height: 12rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+
+    @media (min-width: $breakpoint-md) {
+        height: 100%;
+    }
+
+    iframe {
+        width: 100%;
+        height: 100%;
+        border: 0;
+        filter: invert(90%) hue-rotate(180deg);
+    }
+}
+
+.footer-copyright {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid $color-gray-medium;
+    text-align: center;
+    color: $color-gray-medium;
+
+    p {
+        margin: 0;
+    }
+
+    a {
+        color: $color-gray-light;
+        text-decoration: none;
+        transition: color 0.3s ease;
+        font-weight: 500;
+
+        &:hover {
+            color: $color-accent;
+        }
+    }
+
+    span {
+        color: $color-gray-medium;
+        margin: 0 0.5rem;
+    }
+}

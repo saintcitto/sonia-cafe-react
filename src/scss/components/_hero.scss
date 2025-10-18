@@ -1,0 +1,49 @@
+@import '../variables';
+
+.hero-section {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+
+    .hero-overlay {
+        position: absolute;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .hero-content {
+        position: relative;
+        z-index: 10;
+        padding: 1.5rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        animation: fade-in-down 1s ease-out forwards;
+
+        @media (min-width: $breakpoint-md) {
+            font-size: 4.5rem;
+        }
+        @media (min-width: $breakpoint-lg) {
+            font-size: 6rem;
+        }
+    }
+
+    p {
+        font-size: 1.125rem;
+        max-width: 42rem;
+        margin: 0 auto;
+        animation: fade-in-up 1s ease-out 0.5s forwards;
+        opacity: 0; // Start hidden for animation
+
+        @media (min-width: $breakpoint-md) {
+            font-size: 1.25rem;
+        }
+    }
+}
