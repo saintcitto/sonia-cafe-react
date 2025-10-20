@@ -22,14 +22,37 @@ export const menuData = [
             { name: 'Nasi Goreng Ayam', price: 30000 },
             { name: 'Nasi Goreng Seafood', price: 35000 },
             { name: 'Nasi Goreng Cabe Ijo', price: 30000 },
-            { name: 'Nasi Goreng Kambing', price: 30000 },
+            { name: 'Nasi Goreng Kambing', price: 50000 },
             { name: 'Nasi Goreng Pete', price: 35000 },
-            { name: 'Nasi Goreng Tomyam Seafood', price: 35000 },
             { name: 'Nasi Goreng Special', price: 37500 },
             { name: 'Nasi Goreng Ayam Lada Hitam', price: 40000 },
             { name: 'Nasi Goreng Daging Lada Hitam', price: 40000 },
+            { name: 'Nasi Goreng Bistik Ayam', price: 27500 },
             { name: 'Nasi Goreng Bistik Daging', price: 27500 },
             { name: 'Nasi Goreng Sate Kecap', price: 27500 },
+            { name: 'Nasi Goreng Sate Kacang', price: 50000 },
+        ]
+    },
+    {
+        name: 'Japan Food',
+        items: [
+            { name: 'Chicken Katsu Rice', price: 30000 },
+            { name: 'Chicken Karaage Rice', price: 30000 },
+            { name: 'Chicken Karaage', price: 35000 },
+        ]
+    },
+    {
+        name: 'Italy Food',
+        items: [
+            { name: 'Spaghetti Chicken Hot', price: 30000 },
+            { name: 'Spaghetti Bolognese', price: 25000 },
+        ]
+    },
+    {
+        name: 'Steak',
+        items: [
+            { name: 'Single Chicken Steak', price: 25000 },
+            { name: 'Double Chicken Steak', price: 40000 },
         ]
     },
     {
@@ -53,26 +76,67 @@ export const menuData = [
             { name: 'Mie Daging Lada Hitam', price: 40000 },
             { name: 'Indomie Daging Lada Hitam', price: 37500 },
             { name: 'Indomie Kari Bangladesh', price: 15000 },
-            { name: 'Indomie Kari Bangladesh (Ayam)', price: 27000 },
+            { name: 'Indomie Kari Bangladesh (Ayam)', price: 27500 },
         ]
     },
-     {
-        name: 'Steak',
+    {
+        name: 'Olahan Daging',
         items: [
-            { name: 'Single Chicken Steak', price: 25000 },
-            { name: 'Double Chicken Steak', price: 40000 },
-            { name: 'Steak Tenderloin', price: 40000 },
-            { name: 'Crispy Steak Tenderloin', price: 40000 },
+            { name: 'Sop Daging', price: 40000 },
+            { name: 'Nasi Hotplate Ayam/Daging', price: 40000 },
+            { name: 'Tongseng Ayam', price: 37500 },
+            { name: 'Tongseng Sapi', price: 42500 },
+            { name: 'Tongseng Kambing', price: 45000 },
+            { name: 'Sate Lontong Ayam/Daging', price: 275000 },
+            { name: 'Sate Hidang', price: 60000 },
+        ]
+    },
+    {
+        name: 'Olahan Seafood',
+        items: [
+            { name: 'Nila Bakar/Asam Manis/Goreng', price: 15000/Ons },
+            { name: 'Gurami Bakar/Asam Manis/Goreng', price: 20000/Ons },
+            { name: 'Gembung Bakar/Goreng', price: 27500 },
+            { name: 'Gembung Tauco/Steam', price: 35000 },
+            { name: 'Pari Bakar', price: 35000 },
+            { name: 'Pari Taucho', price: 45000 },
+            { name: 'Hotplate Seafood', price: 40000 },
+            { name: 'Cumi Goreng Tepung', price: 55000 },
+            { name: 'Udang Goreng Tepung', price: 60000 },
+            { name: 'Cumi Asam Manis/Goreng Mentega/Tauco', price: 55000 },
+            { name: 'Udang Asam Manis/Goreng Mentega/Tauco', price: 60000 },
+        ]
+    },
+    {
+        name: 'Olahan Sayuran',
+        items: [
+            { name: 'Capcay Sayur', price: 25000 },
+            { name: 'Tauge Ikan Asin', price: 25000 },
+            { name: 'Tumis Kankung Terasi', price: 25000 },
+            { name: 'Tumis Genjer Terasi', price: 25000 },
+            { name: 'Tomyam Seafood', price: 35000 },
+        ]
+    },
+    {
+        name: 'Tampah',
+        item: [
+            { name: 'Nasi Ayam Tampah Bakar', price: 99000 },
+            { name: 'Nasi Ayam Tampah Goreng', price: 99000 },
+            { name: 'Nasi Ikan Tampah Bakar', price: 99000 },
+            { name: 'Nasi Ikan Tampah Goreng', price: 99000 },
         ]
     },
     {
         name: 'Snack/Cemilan',
         items: [
+            { name: 'Lalapan', price: 10000 },
+            { name: 'Peter Bakar/Goreng', price: 15000 },
             { name: 'Roti Cane Gula', price: 10000 },
             { name: 'Roti Kuah Kari', price: 12500 },
             { name: 'Roti Cane Coklat Keju', price: 15000 },
             { name: 'Roti Cane Susu', price: 12500 },
-            { name: 'Mie Rebus', price: 20000 },
+            { name: 'Rujak Porsi Kecil', price: 15000 },
+            { name: 'Rujak Porsi Besar', price: 20000 },
             { name: 'Martabak Telur', price: 20000 },
             { name: 'Martabak Mesir', price: 27500 },
             { name: 'Kari Kambing Kecil', price: 30000 },
@@ -82,11 +146,12 @@ export const menuData = [
             { name: 'Tahu & Tempe Goreng', price: 18000 },
             { name: 'Pisang Bakar Cokelat Keju', price: 21000 },
             { name: 'Pisang Goreng Cokelat Keju', price: 22000 },
-            { name: 'Pisang Goreng Srikaya', price: 20000 },
             { name: 'Mantau Srikaya', price: 21000 },
             { name: 'Jamur Crispy', price: 20000 },
             { name: 'Nugget', price: 20000 },
             { name: 'Sosis', price: 20000 },
+            { name: 'Chicken Wings', price: 35000 },
+            { name: 'Dimsum Mentai Ayam/Kepiting/Udang', price: 25000 },
         ]
     },
     {
@@ -94,22 +159,47 @@ export const menuData = [
         items: [
             { name: 'Hot Tea', price: 6000 },
             { name: 'Iced Tea', price: 10000 },
+            { name: 'Hot Green Tea', price: 10000 },
+            { name: 'Iced Green Tea', price: 15000 },
             { name: 'Hot Lemon Tea', price: 10000 },
             { name: 'Iced Lemon Tea', price: 15000 },
             { name: 'Teh Jahe Sereh', price: 15000 },
             { name: 'Teh Mint', price: 15000 },
             { name: 'Teh Jahe Panas', price: 15000 },
+            { name: 'Hot Thai Tea', price: 20000 },
+            { name: 'Iced Thai Tea', price: 25000 },
+            { name: 'Es Cincau', price: 20000 },
             { name: 'Hot Milo', price: 15000 },
             { name: 'Iced Milo', price: 20000 },
             { name: 'Teh Tarik', price: 20000 },
             { name: 'Teh Jahe Susu Panas', price: 20000 },
-            { name: 'Coffee Brown Sugar', price: 20000 },
+            { name: 'Coffee India', price: 15000 },
+            { name: 'Coffeemix Hot', price: 15000 },
+            { name: 'Coffeemix Iced', price: 20000 },
+            { name: 'Luwak White Coffee', price: 15000 },
+            { name: 'Luwak White Coffee Iced', price: 20000 },
+            { name: 'Espresso', price: 15000 },
+            { name: 'Iced Espresso', price: 20000 },
+            { name: 'Tubruk Panas', price: 15000 },
+            { name: 'Latte Art Hot', price: 20000 },
+            { name: 'Latte Art Iced', price: 25000 },
+            { name: 'Sanger Panas', price: 20000 },
+            { name: 'Sanger Dingin', price: 25000 },
+            { name: 'Cappuccino Hot', price: 15000 },
+            { name: 'Cappuccino Iced', price: 20000 },
+            { name: 'Coffee Brown Sugar Hot', price: 20000 },
+            { name: 'Coffee Brown Sugar Iced', price: 22500 },
+            { name: 'Vietnam Drip', price: 22000 },
             { name: 'Coffee Lemonade', price: 25000 },
         ]
     },
     {
         name: 'Special Drink',
         items: [
+            { name: 'Puding Telur Single', price: 6000 },
+            { name: 'Puding Telur Double', price: 12000 },
+            { name: 'Teh Susu Telur', price: 20000 },
+            { name: 'Teh Susu Telur Dingin', price: 25000 },
             { name: 'Es Kelapa Gelas', price: 20000 },
             { name: 'Es Kelapa Bulat', price: 20000 },
             { name: 'Es Kelapa Jeruk', price: 25000 },
@@ -121,7 +211,12 @@ export const menuData = [
             { name: 'Jus Pelangi', price: 27500 },
             { name: 'Sop Buah', price: 25000 },
             { name: 'Es Buah', price: 25000 },
-            { name: 'Ice Lychee Tea', price: 20000 },
+            { name: 'Ice Lychee Tea', price: 25000 },
+            { name: 'Ice Cream Chocolate', price: 17500 },
+            { name: 'Ice Cream Strawberry', price: 17500 },
+            { name: 'Ice Cream Vanilla', price: 17500 },
+            { name: 'Ice Cream Cincau', price: 250000 },
+
         ]
     },
     {
@@ -165,6 +260,14 @@ export const menuData = [
             { name: 'India Mocktail', price: 20000 },
             { name: 'Sexy Blue', price: 20000 },
             { name: 'Sunkiest Mojito', price: 20000 },
+        ]
+    },
+    {
+        name: 'Milkshake',
+        items: [
+            { name: 'Milky Creamy', price: 25000 },
+            { name: 'Milkhshake Dark Choco', price: 25000 },
+            { name: 'Milkshake Oreo', price: 25000 },
         ]
     }
 ];
