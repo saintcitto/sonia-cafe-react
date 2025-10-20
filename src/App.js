@@ -2,7 +2,6 @@ import React from 'react';
 import AppHeader from './components/AppHeader';
 import Hero from './components/Hero';
 import Menu from './components/Menu';
-import Services from './components/Services';
 import OperationalHours from './components/OperationalHours';
 import AppFooter from './components/AppFooter';
 import WhatsAppBubble from './components/WhatsAppBubble';
@@ -15,7 +14,6 @@ function App() {
       <main className="main-content">
         <Hero />
         <Menu menuData={menuData} />
-        <Services />
         <OperationalHours />
       </main>
       <AppFooter />

@@ -39,7 +39,6 @@ const AppHeader = () => {
         <ul className={`nav-links ${menuOpen ? 'open' : ''}`}>
           <li><a href="#home" onClick={() => setMenuOpen(false)}>Home</a></li>
           <li><a href="#menu" onClick={() => setMenuOpen(false)}>Menu</a></li>
-          <li><a href="#services" onClick={() => setMenuOpen(false)}>Services</a></li>
           <li><a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a></li>
         </ul>
       </div>
