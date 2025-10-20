@@ -1,49 +1,49 @@
 import React, { useState, useEffect } from 'react';
 
 const AppHeader = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
-  const [menuOpen, setMenuOpen] = useState(false);
+    const [isScrolled, setIsScrolled] = useState(false);
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => setIsScrolled(window.scrollY > 50);
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth > 768) {
-        setMenuOpen(false);
-      }
+    const handleScroll = () => {
+        setIsScrolled(window.scrollY > 50);
     };
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
 
-  return (
-    <header className={`app-header ${isScrolled ? 'scrolled' : ''}`}>
-      <div className="container nav-container">
-        <a href="#home" className="brand">Sonia Cafe</a>
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
+    
+    const closeMenu = () => {
+        setIsMenuOpen(false);
+    };
 
-        <button
-          className={`menu-toggle ${menuOpen ? 'open' : ''}`}
-          aria-label={menuOpen ? 'Tutup menu' : 'Buka menu'}
-          aria-expanded={menuOpen}
-          onClick={() => setMenuOpen(!menuOpen)}
-        >
-          <span className="bar" />
-          <span className="bar" />
-          <span className="bar" />
-        </button>
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
 
-        <ul className={`nav-links ${menuOpen ? 'open' : ''}`}>
-          <li><a href="#home" onClick={() => setMenuOpen(false)}>Home</a></li>
-          <li><a href="#menu" onClick={() => setMenuOpen(false)}>Menu</a></li>
-          <li><a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a></li>
-        </ul>
-      </div>
-    </header>
-  );
+    return (
+        <header className={`app-header ${isScrolled ? 'scrolled' : ''}`}>
+            <nav className="container nav-container">
+                <a href="#home" className="nav-brand" onClick={closeMenu}>Sonia Cafe</a>
+
+                <button 
+                    className={`menu-toggle ${isMenuOpen ? 'open' : ''}`} 
+                    onClick={toggleMenu}
+                    aria-label="Toggle menu"
+                >
+                    <span className="bar"></span>
+                    <span className="bar"></span>
+                    <span className="bar"></span>
+                </button>
+
+                <ul className={`nav-links ${isMenuOpen ? 'open' : ''}`}>
+                    <li><a href="#home" onClick={closeMenu}>Home</a></li>
+                    <li><a href="#menu" onClick={closeMenu}>Menu</a></li>
+                    <li><a href="#contact" onClick={closeMenu}>Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    );
 };
 
 export default AppHeader;
