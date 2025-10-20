@@ -119,7 +119,7 @@ export const menuData = [
     },
     {
         name: 'Tampah',
-        item: [
+        items: [
             { name: 'Nasi Ayam Tampah Bakar', price: 99000 },
             { name: 'Nasi Ayam Tampah Goreng', price: 99000 },
             { name: 'Nasi Ikan Tampah Bakar', price: 99000 },
