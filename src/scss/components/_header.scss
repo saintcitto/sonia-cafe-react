@@ -121,6 +121,15 @@
 
 @media (max-width: $breakpoint-md) {
     .app-header {
+        background-color: rgba(17, 24, 39, 0.85);
+        backdrop-filter: blur(8px);
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+
+        .nav-container {
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+        }
+
         .menu-toggle {
             display: flex;
         }
