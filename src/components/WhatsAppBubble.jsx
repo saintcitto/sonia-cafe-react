@@ -2,8 +2,8 @@ import React from 'react';
 
 const WhatsAppBubble = () => {
   const phoneNumber = "6285362962929";
-  const message = `Nomor Ruangan: \nPesan apa dan jumlahnya berapa:`;
-  const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+  const message = "Nomor Ruangan:%0A" + "Pesan apa dan jumlahnya berapa:";
+  const whatsappLink = `https://wa.me/${phoneNumber}?text=${message}`;
 
   return (
     <a
