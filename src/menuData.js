@@ -94,8 +94,8 @@ export const menuData = [
     {
         name: 'Olahan Seafood',
         items: [
-            { name: 'Nila Bakar/Asam Manis/Goreng (Harga dihitung perons)', price: 15000 },
-            { name: 'Gurami Bakar/Asam Manis/Goreng (Harga dihitung perons)', price: 20000 },
+            { name: 'Nila Bakar/Asam Manis/Goreng', price: '15000 / Ons' },
+            { name: 'Gurami Bakar/Asam Manis/Goreng', price: '20000 / Ons' },
             { name: 'Gembung Bakar/Goreng', price: 27500 }, 
             { name: 'Gembung Tauco/Steam', price: 35000 },
             { name: 'Pari Bakar', price: 35000 },
@@ -122,8 +122,8 @@ export const menuData = [
         items: [
             { name: 'Nasi Ayam Tampah Bakar', price: 99000 },
             { name: 'Nasi Ayam Tampah Goreng', price: 99000 },
-            { name: 'Nasi Ikan Tampah Bakar', price: 99000 },
-            { name: 'Nasi Ikan Tampah Goreng', price: 99000 },
+            { name: 'Nasi Seafood Tampah Bakar', price: 150000 },
+            { name: 'Nasi Seafood Tampah Goreng', price: 150000 },
         ]
     },
     {
