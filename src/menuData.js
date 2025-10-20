@@ -96,7 +96,7 @@ export const menuData = [
         items: [
             { name: 'Nila Bakar/Asam Manis/Goreng', price: '15000 / Ons' },
             { name: 'Gurami Bakar/Asam Manis/Goreng', price: '20000 / Ons' },
-            { name: 'Gembung Bakar/Goreng', price: 27500 },
+            { name: 'Gembung Bakar/Goreng', price: 27500 }, 
             { name: 'Gembung Tauco/Steam', price: 35000 },
             { name: 'Pari Bakar', price: 35000 },
             { name: 'Pari Taucho', price: 45000 },
