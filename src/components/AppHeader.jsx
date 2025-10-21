@@ -16,12 +16,6 @@ const AppHeader = () => {
         <header className={`app-header ${isScrolled ? 'scrolled' : ''}`}>
             <nav className="container nav-container">
                 <a href="#home" className="nav-brand">Sonia Cafe</a>
-
-                <ul className="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#menu">Menu</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
             </nav>
         </header>
     );

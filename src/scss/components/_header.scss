@@ -4,56 +4,35 @@
     left: 0;
     right: 0;
     z-index: 50;
-    transition: all 0.3s ease-in-out;
     background-color: rgba(17, 24, 39, 0.95);
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(6px);
+    backdrop-filter: blur(8px);
+    transition: all 0.3s ease-in-out;
 
     .nav-container {
         display: flex;
-        justify-content: space-between;
+        justify-content: center; // posisi teks di tengah
         align-items: center;
         padding: 1rem 2rem;
     }
 
     .nav-brand {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
         font-weight: 700;
         font-family: $font-display;
         color: $color-accent;
         text-decoration: none;
-    }
-
-    .nav-links {
-        display: flex;
-        list-style: none;
-        gap: 2rem;
-        margin: 0;
-        padding: 0;
-
-        li a {
-            color: $color-text-light;
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.3s ease;
-
-            &:hover {
-                color: $color-accent;
-            }
-        }
+        letter-spacing: 0.5px;
     }
 
     &.scrolled {
         background-color: rgba(17, 24, 39, 1);
-        backdrop-filter: blur(8px);
-        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 4px 10px -2px rgba(0, 0, 0, 0.4);
     }
 }
 
 @media (max-width: $breakpoint-md) {
-    .nav-links {
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
+    .app-header .nav-container {
+        justify-content: center;
     }
 }
