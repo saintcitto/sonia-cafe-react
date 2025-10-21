@@ -19,7 +19,7 @@ const Hero = () => {
                         </div>
                     </a>
                     
-                    {/* --- KARTU CUCI MOBIL YANG DIPERBARUI --- */}
+                    {}
                     <a href="#services" className="summary-card summary-card--details">
                         <Droplet size={32} />
                         <h4>Cuci Mobil</h4>
