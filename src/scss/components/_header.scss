@@ -58,7 +58,7 @@
             bottom: 0.45rem;
             transform: translateX(-50%);
         }
-        
+
         &.open .bar:nth-child(1) {
             top: 50%;
             transform: translate(-50%, -50%) rotate(45deg);
@@ -115,11 +115,12 @@
     }
 }
 
-// ======================================================
-// REVISI UTAMA UNTUK TAMPILAN MOBILE
-// ======================================================
 @media (max-width: $breakpoint-md) {
     .app-header {
+        background-color: rgba(17, 24, 39, 0.85);
+        backdrop-filter: blur(8px);
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+
         .nav-container {
             padding-left: 1.5rem;
             padding-right: 1.5rem;
@@ -136,21 +137,17 @@
             right: 0;
             bottom: 0;
             
-            // 1. Latar belakang transparan dengan efek blur
-            background: rgba(17, 24, 39, 0.75);
-            backdrop-filter: blur(12px);
+            background: $color-background;
 
-            // 2. Konten diatur ke atas, tidak lagi di tengah
             flex-direction: column;
             align-items: center;
-            justify-content: flex-start;
-            padding-top: 8rem; // Memberi ruang di bawah header
+            justify-content: center;
+            padding: 0;
             gap: 2.5rem;
             z-index: 10000;
             
-            // 3. Animasi baru: slide dari atas dan fade-in
             opacity: 0;
-            transform: translateY(-100%);
+            transform: translateX(100%);
             transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.2s ease-out;
             pointer-events: none;
             
@@ -162,7 +159,7 @@
 
         .nav-links.open {
             opacity: 1;
-            transform: translateY(0);
+            transform: translateX(0);
             pointer-events: auto;
         }
     }
