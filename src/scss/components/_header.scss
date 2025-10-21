@@ -137,7 +137,8 @@
             right: 0;
             bottom: 0;
             
-            background: $color-background; 
+            background-color: #0d0d0f;
+            
 
             flex-direction: column;
             align-items: center;
@@ -148,7 +149,7 @@
             
             opacity: 0;
             transform: translateX(100%);
-            transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.2s ease-out;
+            transition: background-color 0.3s ease, transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.2s ease-out;
             pointer-events: none;
             
             li a {
