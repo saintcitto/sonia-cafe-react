@@ -1,21 +1,30 @@
 import React, { useState, useEffect } from 'react';
 
 const AppHeader = () => {
-    const [isScrolled, setIsScrolled] = useState(false);
-
-    const handleScroll = () => {
-        setIsScrolled(window.scrollY > 50);
-    };
+    const [isVisible, setIsVisible] = useState(true);
 
     useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 150) {
+                setIsVisible(false);
+            } else {
+                setIsVisible(true);
+            }
+        };
+
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
     return (
-        <header className={`app-header ${isScrolled ? 'scrolled' : ''}`}>
+        <header className="app-header">
             <nav className="container nav-container">
-                <a href="#home" className="nav-brand">Sonia Cafe</a>
+                <a 
+                    href="#home" 
+                    className={`nav-brand ${isVisible ? 'show' : 'hide'}`}
+                >
+                    Sonia Cafe
+                </a>
             </nav>
         </header>
     );
